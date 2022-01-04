@@ -1,0 +1,524 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../images/favicon.ico">
+
+	<title>پنل مدیریتی سانی ادمین</title>
+
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="css/vendors_css.css">
+
+	<!-- Style-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/skin_color.css">
+
+</head>
+
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed rtl">
+
+	<div class="wrapper">
+
+		<header class="main-header">
+			<!-- Header Navbar -->
+			<nav class="navbar navbar-static-top pl-30">
+				<!-- Sidebar toggle button-->
+				<div>
+					<ul class="nav">
+						<li class="btn-group nav-item">
+							<a href="#" class="waves-effect waves-light nav-link rounded svg-bt-icon"
+								data-toggle="push-menu" role="button">
+								<i class="nav-link-icon mdi mdi-menu"></i>
+							</a>
+						</li>
+						<li class="btn-group nav-item">
+							<a href="#" data-provide="fullscreen"
+								class="waves-effect waves-light nav-link rounded svg-bt-icon" title="تمام صفحه">
+								<i class="nav-link-icon mdi mdi-crop-free"></i>
+							</a>
+						</li>
+					
+					</ul>
+				</div>
+
+				<div class="navbar-custom-menu r-side">
+					<ul class="nav navbar-nav">
+						<!-- full Screen -->
+						<li class="search-bar">
+							<div class="lookup lookup-circle lookup-right">
+								<input type="text" name="s">
+							</div>
+						</li>
+						
+								
+				</div>
+			</nav>
+		</header>
+
+		<!-- Left side column. contains the logo and sidebar -->
+		<aside class="main-sidebar">
+			<!-- sidebar-->
+			<section class="sidebar">
+
+				<div class="user-profile">
+					<div class="ulogo">
+						<a href="index.html">
+							<!-- logo for regular state and mobile devices -->
+							<div class="d-flex align-items-center justify-content-center">
+								<img src="../images/logo-dark.png" alt="">
+								<h3><b>Sunny</b> Admin</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<!-- sidebar menu-->
+				<ul class="sidebar-menu" data-widget="tree">
+
+					<li>
+						<a href="index.html">
+							<i data-feather="pie-chart"></i>
+							<span>داشبورد</span>
+						</a>
+					</li>
+
+					<li class="treeview">
+						<a href="#">
+							<i data-feather="message-circle"></i>
+							<span>انبار</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-right pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="chat.html"><i class="ti-more"></i>انبار قله های داخلی</a></li>
+							<li><a href="calendar.html"><i class="ti-more"></i>انبار قله های خارجی</a></li>
+						</ul>
+					</li>    
+                                        <li class="treeview">
+						<a href="#">
+							<i data-feather="server"></i>
+							<span>معادن</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-right pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="tables_simple.html"><i class="ti-more"></i>سلماس</a></li>
+							<li><a href="tables_data.html"><i class="ti-more"></i>مهاباد</a></li>
+                                                        <li><a href="tables_data.html"><i class="ti-more"></i>تکاب</a></li>
+                                                        <li><a href="tables_data.html"><i class="ti-more"></i>آتشکوه</a></li>
+                                                        <li><a href="tables_data.html"><i class="ti-more"></i>افزودن</a></li>
+						</ul>
+					</li>
+
+					<li class="treeview">
+						<a href="#">
+							<i data-feather="mail"></i> <span>لیست مشتریان احتمالی</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-right pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="mailbox_inbox.html"><i class="ti-more"></i>مشتریان احتمالی</a></li>
+							<li><a href="mailbox_compose.html"><i class="ti-more"></i>مشتریان راغب</a></li>
+							<li><a href="mailbox_read_mail.html"><i class="ti-more"></i>مشتریان vip</a></li>
+						</ul>
+					</li>
+	                                <li>
+						<a href="auth_login.html">
+							<i data-feather="lock"></i>
+							<span>پیغامها</span>
+						</a>
+					</li>
+                                        <li>
+						<a href="auth_login.html">
+							<i data-feather="lock"></i>
+							<span>خریداران</span>
+						</a>
+					</li>
+	<li class="treeview">
+						<a href="#">
+							<i data-feather="layers"></i>
+							<span>گزارشات</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-right pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							
+							<li class="treeview">
+								<a href="#">تولید
+									<span class="pull-right-container">
+										<i class="fa fa-angle-right pull-right"></i>
+									</span>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="#">تمام معادن</a></li>
+                                                                        <li><a href="#">سلماس</a></li>
+                                                                        <li><a href="#">مهاباد</a></li>
+ 									<li><a href="#">تکاب</a></li>
+									<li><a href="#">آتشکوه</a></li>     
+					
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#">بارگیری شده
+									<span class="pull-right-container">
+										<i class="fa fa-angle-right pull-right"></i>
+									</span>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="#">تمام معادن</a></li>
+                                                                        <li><a href="#">سلماس</a></li>
+                                                                        <li><a href="#">مهاباد</a></li>
+ 									<li><a href="#">تکاب</a></li>
+									<li><a href="#">آتشکوه</a></li>     
+					
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#">موجودی
+									<span class="pull-right-container">
+										<i class="fa fa-angle-right pull-right"></i>
+									</span>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="#">تمام معادن</a></li>
+                                                                        <li><a href="#">سلماس</a></li>
+                                                                        <li><a href="#">مهاباد</a></li>
+ 									<li><a href="#">تکاب</a></li>
+									<li><a href="#">آتشکوه</a></li>     
+					
+								</ul>
+							</li>
+						     <li class="treeview">
+								<a href="#">لیست قله های صادراتی موجود
+									<span class="pull-right-container">
+										<i class="fa fa-angle-right pull-right"></i>
+									</span>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="#">تمام معادن</a></li>
+                                                                        <li><a href="#">سلماس</a></li>
+                                                                        <li><a href="#">مهاباد</a></li>
+ 									<li><a href="#">تکاب</a></li>
+									<li><a href="#">آتشکوه</a></li>     
+					
+								</ul>
+							</li>
+						  <li class="treeview">
+								<a href="#">لیست قله های داخلی موجود
+									<span class="pull-right-container">
+										<i class="fa fa-angle-right pull-right"></i>
+									</span>
+								</a>
+								<ul class="treeview-menu">
+									<li><a href="#">تمام معادن</a></li>
+                                                                        <li><a href="#">سلماس</a></li>
+                                                                        <li><a href="#">مهاباد</a></li>
+ 									<li><a href="#">تکاب</a></li>
+									<li><a href="#">آتشکوه</a></li>     
+					
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+
+
+                                     <li>
+                                          <a href="mailbox_inbox.html"><i class="ti-more"></i>اطلاعات بروزرسانی شده</a>
+                                     </li>
+
+
+					
+
+					
+
+					
+
+					<li class="treeview">
+						<a href="#">
+							<i data-feather="edit-2"></i>
+							<span>کاربران پنل ادمین</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-right pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="icons_fontawesome.html"><i class="ti-more"></i>فونت آوسوم</a></li>
+							<li><a href="icons_glyphicons.html"><i class="ti-more"></i>آیکون Glyphicons</a></li>
+							<li><a href="icons_material.html"><i class="ti-more"></i>آیکون های متریال</a></li>
+							<li><a href="icons_themify.html"><i class="ti-more"></i>آیکون های Themify</a></li>
+							<li><a href="icons_simpleline.html"><i class="ti-more"></i>آیکون های SimpleLine</a></li>
+							<li><a href="icons_cryptocoins.html"><i class="ti-more"></i>آیکون های ارز دیجیتال</a></li>
+							<li><a href="icons_flag.html"><i class="ti-more"></i>آیکون های پرچم</a></li>
+							<li><a href="icons_weather.html"><i class="ti-more"></i>آیکون های آب و هوا</a></li>
+						</ul>
+					</li>
+
+				
+					<li>
+						<a href="auth_login.html">
+							<i data-feather="lock"></i>
+							<span>خروج</span>
+						</a>
+					</li>
+
+				</ul<ul class="sidebar-menu" data-widget="tree">
+
+					<li>
+						<a href="index.html">
+							<i data-feather="pie-chart"></i>
+							<span>داشبورد</span>
+						</a>
+					</li>
+
+					<li class="treeview">
+						<a href="#">
+							<i data-feather="message-circle"></i>
+							<span>انبار</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-right pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="mojodi.html"><i class="ti-more"></i>انبار قله های داخلی</a></li>
+							<li><a href="mojodi-kh.html"><i class="ti-more"></i>انبار قله های خارجی</a></li>
+						</ul>
+					</li>    
+                                        <li class="treeview">
+						<a href="#">
+							<i data-feather="server"></i>
+							<span>معادن</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-right pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="madan2.html"><i class="ti-more"></i>سلماس</a></li>
+							<li><a href="madan1.html"><i class="ti-more"></i>مهاباد</a></li>
+                                                        <li><a href="madan3.html"><i class="ti-more"></i>تکاب</a></li>
+                                                        <li><a href="madan.html"><i class="ti-more"></i>آتشکوه</a></li>
+                                                        <li><a href="add-madan.html"><i class="ti-more"></i>افزودن</a></li>
+						</ul>
+					</li>
+
+					<li class="treeview">
+						<a href="#">
+							<i data-feather="mail"></i> <span>لیست مشتریان احتمالی</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-right pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="maby (2).html"><i class="ti-more"></i>مشتریان احتمالی</a></li>
+							<li><a href="leads.html"><i class="ti-more"></i>مشتریان راغب</a></li>
+							<li><a href="vip user.html"><i class="ti-more"></i>مشتریان vip</a></li>
+						</ul>
+					</li>
+	                                <li>
+						<a href="forms_editors.html">
+							<i data-feather="lock"></i>
+							<span>پیغامها</span>
+						</a>
+					</li>
+                                        <li>
+						<a href="buyers.html">
+							<i data-feather="lock"></i>
+							<span>خریداران</span>
+						</a>
+					</li>
+	
+
+
+
+                                     <li>
+                                          <a href="updates.html"><i class="ti-more"></i>اطلاعات بروزرسانی شده</a>
+                                     </li>
+
+
+					
+
+					
+
+					
+
+					<li class="treeview">
+						<a href="#">
+							<i data-feather="edit-2"></i>
+							<span>کاربران پنل ادمین</span>
+							<span class="pull-right-container">
+								<i class="fa fa-angle-right pull-right"></i>
+							</span>
+						</a>
+						<ul class="treeview-menu">
+							<li><a href="admin-user.html"><i class="ti-more"></i>کاربران ادمین</a></li>
+							<li><a href="admin-user - activity.html"><i class="ti-more"></i>فعالیت ادمین ها</a></li>
+							<li><a href="add-role.html"><i class="ti-more"></i>افزودن رول</a></li>
+						</ul>
+					</li>
+
+				
+					<li>
+						<a href="auth_login.html">
+							<i data-feather="lock"></i>
+							<span>خروج</span>
+						</a>
+					</li>
+
+				</ul>
+			</section>
+
+			<div class="sidebar-footer">
+				<!-- item-->
+				<a href="javascript:void(0)" class="link" data-toggle="tooltip" title="" data-original-title="تنظیمات"
+					aria-describedby="tooltip92529"><i class="ti-settings"></i></a>
+				<!-- item-->
+				<a href="mailbox_inbox.html" class="link" data-toggle="tooltip" title="" data-original-title="ایمیل"><i
+						class="ti-email"></i></a>
+				<!-- item-->
+				<a href="javascript:void(0)" class="link" data-toggle="tooltip" title="" data-original-title="خروج"><i
+						class="ti-lock"></i></a>
+			</div>
+		</aside>
+
+	  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	  <div class="container-full">
+		<!-- Content Header (Page header) -->
+		<div class="content-header">
+			<div class="d-flex align-items-center">
+				<div class="mr-auto">
+					<h3 class="page-title">جداول ساده</h3>
+					<div class="d-inline-block align-items-center">
+						<nav>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html"><i class="mdi mdi-home-outline"></i></a></li>
+								<li class="breadcrumb-item" aria-current="page">جداول</li>
+								<li class="breadcrumb-item active" aria-current="page">Basic Tables</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Main content -->
+		<section class="content">
+
+		  <div class="row">
+
+		
+
+			<div class="col-12 col-lg-12">
+			  <div class="box">
+				<div class="box-header with-border">
+				  <h4 class="box-title">لیست کاربران ادمین</h4>
+				</div>
+				<!-- /.box-header -->
+				<div class="box-body">
+					<div class="table-responsive">
+					  <table class="table mb-0">
+						  <thead class="thead-dark">
+							<tr>
+							  <th scope="col">#</th>
+							  <th scope="col">نام کاربری</th>
+							  <th scope="col">ایمیل</th>
+							  <th scope="col">رمز عبور</th>
+  <th scope="col">نقش</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <th scope="row">1</th>
+							  <td>پدرام</td>
+						         
+							  <td>pedram@</td>
+							 <td>12455</td>
+ <td>ادمین-1</td>
+							</tr>
+							<tr>
+							  <th scope="row">2</th>
+							  <td>پریسا</td>
+					                   
+							  <td>parisa@</td>
+							 <td>12455</td>
+ <td>12455</td>
+							</tr>
+							<tr>
+							  <th scope="row">3</th>
+							  <td>ساناز</td>
+						
+							  <td>sanaz@</td>
+							<td>12455</td>
+ <td>12455</td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /.box-body -->
+			  </div>
+			  <!-- /.box -->
+			</div>
+
+
+	
+
+		
+
+		
+
+		
+
+		
+
+		
+
+			
+			</div>
+		  </div>
+		  <!-- /.row -->
+
+		</section>
+		<!-- /.content -->
+	  </div>
+  </div>
+  <!-- /.content-wrapper -->
+  
+		<footer class="main-footer">
+
+			&copy; 2020 تمامی حقوق محفوظ است
+		</footer>
+
+		
+
+		<!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+		<div class="control-sidebar-bg"></div>
+
+	</div>
+	<!-- ./wrapper -->
+
+
+	<!-- Vendor JS -->
+	<script src="js/vendors.min.js"></script>
+	<script src="../assets/icons/feather-icons/feather.min.js"></script>
+	<script src="../assets/vendor_components/easypiechart/dist/jquery.easypiechart.js"></script>
+	<script src="../assets/vendor_components/apexcharts-bundle-rtl/irregular-data-series.js"></script>
+	<script src="../assets/vendor_components/apexcharts-bundle-rtl/dist/apexcharts.js"></script>
+
+	<!-- Sunny Admin App -->
+	<script src="js/template.js"></script>
+	<script src="js/pages/dashboard.js"></script>
+
+
+</body>
+
+</html>
