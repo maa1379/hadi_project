@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import ExportalListView, InternalListView, store_exportal, store_internal
+from .views import ExportalListView, InternalListView, store_exportal, store_internal ,LineListView
 app_name="product"
 
 urlpatterns=[
@@ -7,4 +7,5 @@ urlpatterns=[
     path("exportal_list/",ExportalListView.as_view(),name="exportal"),
     path("store_ibternal/",store_internal,name="store_internal"),
     path("store_exportal/",store_exportal,name="store_exportal"),
+    path("line_list/",LineListView.as_view(),name="line_list"),
 ]

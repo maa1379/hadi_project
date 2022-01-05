@@ -53,6 +53,7 @@ class Internal(models.Model):
     image2=models.ImageField(upload_to="images/",null=True,blank=True)
     image3=models.ImageField(upload_to="images/",null=True,blank=True)
     image4=models.ImageField(upload_to="images/",null=True,blank=True)
+    line=models.BooleanField(default=False)
 
     def save(self, *args, **kwargs):
         kode_sine_kar = self.kode_sine_kar

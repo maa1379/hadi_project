@@ -11,3 +11,8 @@ class SuperUserCreateForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ("email", "username", "password")
+        labels = {
+            "email": "ایمیل",
+            "username": "نام کابری",
+            "password": "رمز عبور",
+        }

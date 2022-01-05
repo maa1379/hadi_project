@@ -1,9 +1,9 @@
-from .views import MadanListView
 from django.urls import path
-from .views import MadanListView,MadanDetail
+from .views import MadanDetail,MadanCreateView,MadanUpdateView
 app_name="madan"
 
 urlpatterns=[
-    path("mada/",MadanListView.as_view(),name="madan_list"),
-    path("mada/<int:id>/",MadanDetail.as_view(),name="madan_detail"),
+    path("mada/create/",MadanCreateView.as_view(),name="madan_create"),
+    path("mada/update/<int:id>/",MadanUpdateView.as_view(),name="madan_update"),
+    path("mada/<int:id>/",MadanDetail,name="madan_detail"),
 ]

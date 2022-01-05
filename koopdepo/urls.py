@@ -22,6 +22,8 @@ urlpatterns = [
     path('', include("config.urls",namespace="config")),
     path('', include("product.urls",namespace="product")),
     path('', include("demand.urls",namespace="demand")),
+    path('', include("Mine.urls",namespace="madan")),
+    path('', include("account.urls",namespace="account")),
 ]
 if settings.DEBUG:
     urlpatterns = urlpatterns + static(

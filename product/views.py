@@ -1,3 +1,4 @@
+from django.http import HttpResponse, HttpResponseBadRequest
 from django.shortcuts import render, redirect
 from .models import Internal, Exportal
 from django.views.generic import ListView
@@ -10,9 +11,17 @@ class InternalListView(ListView):
     template_name = "product/internal_list.html"
 
 
+class LineListView(ListView):
+    queryset = Internal.objects.filter(line=True)
+    template_name = "product/line_list.html"
+
+
 class ExportalListView(ListView):
     model = Exportal
     template_name = "product/exportal_list.html"
+
+
+
 
 
 def store_internal(request):
@@ -33,7 +42,14 @@ def store_internal(request):
                          'image2',
                          'image3',
                          'image4', ])
-            return redirect("product:internal")
+            return HttpResponse("OK")
+        else:
+            return HttpResponseBadRequest()
+    else:
+        return render(request, 'product/add_internal.html', {})
+
+
+
 
 
 def store_exportal(request):
@@ -41,7 +57,7 @@ def store_exportal(request):
         form = UploadForm(request.POST, request.FILES)
         if form.is_valid():
             request.FILES['file'].save_to_database(
-                model=Exportal,
+                model=Internal,
                 mapdict=[
                     'mine',
                     'kode_sine_ka',
@@ -64,5 +80,8 @@ def store_exportal(request):
                     'image3',
                     'image4',
                 ])
-            return redirect("product:exportal")
-
+            return HttpResponse("OK")
+        else:
+            return HttpResponseBadRequest()
+    else:
+        return render(request, 'product/add_exportal.html', {})

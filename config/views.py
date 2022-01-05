@@ -13,7 +13,8 @@ from django.views.generic import DetailView, ListView, View
 from .models import EmailSave
 from .forms import EmailForm
 from product.models import Exportal, Internal
-from demand.models import Hold, Visit
+from demand.models import Hold, Visit ,Nemoneh
+from django.db.models import Sum
 
 user = get_user_model()
 
@@ -26,7 +27,14 @@ class Panel(View):
             'exportal_count': Exportal.objects.count(),
             'hold_count': Hold.objects.count(),
             'visit_count': Visit.objects.count(),
+            'nemoneh_count': Nemoneh.objects.count(),
+            'buyer': Exportal.objects.count(),
+            # "tolid_kol_saderati":Exportal.objects.all().aggregate(Sum("vazne_baskol")),
+            "tolid_kol_saderati":str(Exportal.objects.all().aggregate(Sum("vazne_baskol")))[21:-1],
+            "tolid_kol_dakheli":str(Internal.objects.all().aggregate(Sum("tonazh_taghribi")))[24:-1],
+
         }
+        print(str(Exportal.objects.all().aggregate(Sum("vazne_baskol")))[21:-1:],)
         return render(request, "panel.html", context)
 
 
@@ -47,22 +55,11 @@ class Send_Email(View):
             EmailSave.objects.create(subject=subject, message=message)
             return redirect("config:config")
 
-
-class BuyeListView(View):
-    def get(self, request):
-        exportal_list = Exportal.objects.exclude(buyer=None)
-        internal_list = Internal.objects.exclude(buyer=None)
-        return render(request, "buyers.html", {"exportal": exportal_list, "internal": internal_list})
+class EmailListView(ListView):
+    model = EmailSave
+    template_name = "config/email_list.html"
 
 
-class PatinetUserList(ListView):
-    queryset = user.objects.filter(is_demand=True)
-    template_name = "vip user - Copy (2).html"
-
-
-class VipUserListView(ListView):
-    queryset = user.objects.filter(is_special_user=True)
-    template_name = "vip user.html"
 
 
 
