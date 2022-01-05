@@ -8,14 +8,14 @@ from django.utils import timezone
 class User(AbstractBaseUser):
     email = models.EmailField(unique=True)
     last_online = models.DateTimeField(default=timezone.now)
-    username=models.CharField(max_length=125,null=True,blank=True)
+    username = models.CharField(max_length=125, null=True, blank=True)
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
     is_special_user = models.BooleanField(default=False)
     password_expire = models.DateTimeField(default=timezone.now)
-    is_demand=models.BooleanField(default=False)
+    is_demand = models.BooleanField(default=False)
     objects = MyUserManager()
 
     def __str__(self):
